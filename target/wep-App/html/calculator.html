@@ -1,0 +1,33 @@
+<a href="/logout/" style="display: block;float: right;">Вийти</a>
+<div style="clear: both"></div>
+<h1>Калькулятор калорій</h1>
+<form action="/calc" method="POST">
+    <input type="hidden" name="calculatorcount" value="1" />
+<table width="40%" align="left">
+    <tr>
+        <th colspan="4"><h2>Список продуктів</h2></th>
+    </tr>
+    <tr>
+        <th>Назва продукту</th>
+        <th>Вага</th>
+        <th>Калорії</th>
+        <th>Ціна</th>
+    </tr>
+    PRODUCTS_ALL
+    <tr>
+        <td>Виберіть день планування</td>
+        <td colspan="3"><select name="productsday">PRODUCTS_DAY</select></td>
+    </tr>
+    <tr>
+        <td colspan="4"><input type="submit" name="" value="Порахувати" /></td>
+    </tr>
+</table>
+</form>
+<table width="40%" align="right">
+    <tr>
+        <th><h2>Список планувань</h2></th>
+    </tr>
+    <tr>
+        <td>PLANNING_LIST</td>
+    </tr>
+</table>
